@@ -1,0 +1,27 @@
+body{
+text-align:center;
+    padding-top: 800px; 
+}
+#S1{
+position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(#008080 0%,#ff0000 100%);
+    display: table;
+    height:800px;
+    height: 100%;
+        width:100%;
+}
+#d{
+   vertical-align: middle;
+    position: relative;
+    display: table-cell; 
+    text-align: center;
+    
+}
+#img{
+border-radius: 50%;
+    width:175px;
+}
