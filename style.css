@@ -29,22 +29,8 @@ body {
     width: 175px;
 }
 
-.menu {
-    position: fixed;
+.my_nav_bar{
+position: sticky;
     top: 0;
-    z-index: 10;
-    width: 100%;
-    margin-top: 0;
-    background-color: white;
-}
-
-.links {
-    display: inline;
-    padding-top: 5px;
-    padding-bottom: 5PX;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: white;
+    z-index: 9999;
 }
