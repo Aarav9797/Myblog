@@ -1,69 +1,112 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Tim Berners-Lee</title>
-    <link rel=stylesheet href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <nav class="navbar-inverse my_nav_bar">
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span> </button>
-            <a class="navbar-brand" href="#">Aarav BhardwaJ</a>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Aarav Bhardwaj</a>
         </div>
+
         <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav" >
-            <li ><a href="#about">About</a>
-            </li>
-            <li ><a href="#work">work</a>
-            </li>
-            <li > <a href="#video">Video</a>
-            </li>
-            <li ><a href="#writings">writings</a>
-            </li>
-            <li ><a href="#contact">contact</a>
-            </li>
-        </ul>
+            <ul class="nav navbar-nav">
+                <li><a href="#Travel">Travel</a></li>
+                <li><a href="#Movie_review">Movie review</a></li>
+                <li><a href="#Environment">Environment </a></li>
+                <li><a href="#Books">Books</a></li>
+                <li><a href="#IPL_team">IPL team</a></li>
+                <li><a href="#About_me">About me</a></li>
+            </ul>
         </div>
 
-      
     </nav>
-    <section id="S1">
-        <div id="d">
-            <img src="TBL.jpg" id="img" />
-            <h2>Hi I'm Tim Berners-Lee </h2>
-            <h3>founder of World Wide Web</h3>
+    <div class="container">
+        <div class="page-header" id="Travel">
+            <h2 class="text-capitalize">Places must visit</h2>
+        </div>
+        <center>
+            <div class="Travel_maindiv">
+                <img src="trave1.jpeg" class="img-responsive" />
+                <h4 class="text-capitalize">
+                    <kbd>prithvi cafe</kbd>
+                </h4>
+                <hr />
+                <h5 class="text-capitalize text-left text-success"> I Visited it last to last to last year</h5>
+                <p class="text-muted text-left">Quaint little restaurant tucked inside a by-lane of Juhu. Blink and you will miss the entrance to the cafe. So be alert enough to spot the black signboard that says "Prithvi cafe" while you are on the main road. The restaurant has a reasonably good menu at reasonable prices. The food is delicious, the servings are quite large and some dishes can be shared by 2 people. Attracts quite a trendy crowd of aspiring celebrities on show days. Be sure to book in advance to avoid disappointments. On other days, the crowd there is pretty hep and happening. Hosts the famous "Prithvi theater fest", which you must attend if possible.</p>
+            </div>
+        </center>
+        <div class="page-header" id="Movie_review">
+            <h2 class="text-capitalize">Review on movies</h2>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame">
+            <span class="glyphicon glyphicon-film"></span>Avengers Endgame<i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="avengers_endgame" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="movie1.jpeg " class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-capitalize text-success text-left">Excellent film to culminate MCU ride
+                    <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                </h5>
+                <p>Saw it today with my kids and they loved it.You should have a minimal previous understanding of the movies or you’ll miss 40% of the fun.At minimum:Infinity WarCivil WarBlack PantherAge ofAnt Man and the WaspProblem is that the whole movie is homage to all movies. Yet you will enjoy it a lot.There is at the beginning of the movie a (spoiler alert) head dismemberment that is quite impressive. But most is comic book style figand battles.Must go to bathroom just before the movie because ut does last 3 hours all worthwhile.</p>
+            </div>
+        </div>
+    </div>
+    <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="environment">
+        <h2 class="text-capitalize">News about environment</h2>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+            <h4>LEGO plans to find replacement material for bricks by 2030</h4>
+            <img src="e1.jpeg" class="col-lg-5 col-md-5 col-sm-5 col-xs-5 img-responsive" />
+            <p class="col-lg-7 col-md-7 col-sm-7 col-xs-7 list-group-item-text">In an effort to be more environmentally responsible, LEGO have said they aim to stop manufacturing bricks made of plastic resin and are considering other options, which could include hemp. According to Telegraph World, the company makes 60 billion blocks a year. While LEGO want to replace the harmful plastic used in their products, they also require the new material to meet the high standards that allow the blocks to work as they always have, especially with the effective “clicking” together is a key aspect of the iconic coloured block.</p>
+        </li>
+
+
+        <li></li>
+
+    </ul>
+    <section id="contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
+        <hr style="width:100%" />
+        <img src="Myself.jpg" class="img-responsive col-lg-3 col-md-3 col-sm-3 col-xs-3 img-circle" />
+        <h4>Aarav Bhardwaj</h4>
+        <div class="contact_1">
+
+            <a href="mailto:my@gmail.com?Subject=Hi">
+                <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+            </a>
+
+            <a href="#">
+                <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
+            </a>
         </div>
     </section>
-    <section id="about">
-        <h1>About</h1>Sir Timothy John Berners-Lee OM KBE FRS FREng FRSA FBCS (born 8 June 1955), also known as TimBL, is an English computer scientist best known as the inventor of the World Wide Web. He is a Professorial Fellow of Computer Science at the University of Oxford and a professor at the Massachusetts Institute of Technology (MIT). Berners-Lee proposed an information management system on 12 March 1989, then implemented the first successful communication between a Hypertext Transfer Protocol (HTTP) client and server via the internet in mid-November.
 
-        Berners-Lee is the director of the World Wide Web Consortium (W3C) which oversees the continued development of the Web. He is also the founder of the World Wide Web Foundation and is a senior researcher and holder of the 3Com founders chair at the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL). He is a director of the Web Science Research Initiative (WSRI) and a member of the advisory board of the MIT Center for Collective Intelligence.[14][15] In 2011, he was named as a member of the board of trustees of the Ford Foundation. He is a founder and president of the Open Data Institute and is currently an advisor at social network MeWe.
 
-        In 2004, Berners-Lee was knighted by Queen Elizabeth II for his pioneering work. In April 2009, he was elected a Foreign Associate of the National Academy of Sciences.[20][21] He was named in Time magazine's list of the 100 Most Important People of the 20th century and has received a number of other accolades for his invention.[22] He was honoured as the "Inventor of the World Wide Web" during the 2012 Summer Olympics opening ceremony in which he appeared working with a vintage NeXT Computer at the London Olympic Stadium.[23] He tweeted "This is for everyone"[24] which appeared in LCD lights attached to the chairs of the audience.[23] He received the 2016 Turing Award "for inventing the World Wide Web, the first web browser, and the fundamental protocols and algorithms allowing the Web to scale".[25]
-    </section>
-    <section id="work">
-        <h1>Work</h1><iframe width="80%" height="600px" src="https://en.wikipedia.org/wiki/Tim_Berners-Lee#Career_and_research"></iframe>
-    </section>
-    <section id="video">
-        <h1>Videos</h1>
-        <iframe width="900" height="500" src="https://www.youtube.com/embed/OM6XIICm_qo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-        <br>
-        <iframe width="900" height="500" src="https://www.youtube.com/embed/J8hzJxb0rpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section><br><br><br><br>
-    <section id="writings"></section>
-    <br>
-    <section id="contact"><iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1559.4033094471656!2d72.90869420096247!3d19.117898584749835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ef5f838205%3A0xea471859ae99eefb!2sBirchwood%2C%20Hiranandani%20Gardens%2C%20Powai%2C%20Mumbai%2C%20Maharashtra%20400076!5e1!3m2!1sen!2sin!4v1601796087924!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="contact"><a>something@something.com</a><br><a><i class="fa fa-instagram" aria-hidden="true"></i>something@instagram.com</a></div>
-    </section>
 </body>
 
 </html>
